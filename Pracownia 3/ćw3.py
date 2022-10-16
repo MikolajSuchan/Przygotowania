@@ -1,6 +1,5 @@
 x=input("Podaj wartość z przedziału 0.0-1.0\n")
 try:
-    x=float(x)
     if float(x)>0 and float(x)<1.0:
         if x>= 0.9:
             print("Ocena:",5.0)
@@ -14,5 +13,7 @@ try:
             print("Ocena:",3.0)
         elif x< 0.5:
             print("Ocena:",2.0)
+    else:
+        print("Niepoprawna wartość")
 except:
     print("Niepoprawna wartość")
